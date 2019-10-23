@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+<Button
+    android:id="@+id/editposition"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="135dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="128dp"
+    android:layout_centerHorizontal="true"
+    android:text="Edit Position" />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/actionbar_height"
+    android:layout_marginTop="@dimen/actionbar_height"
+    tools:context="com.example.andre.aplicacaoposicionamento.LocalizationRequest">
+    <com.example.andre.aplicacaoposicionamento.PinView
+        android:id="@+id/imageViewLocal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:screenOrientation="portrait"
+        />
+    </RelativeLayout>
+</RelativeLayout>

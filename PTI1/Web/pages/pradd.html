@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Position by wifi-fingerprint</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="material-icons md-18">fingerprint</i>Position by wifi-fingerprint</a>
+            </div>
+
+            <ul class="nav navbar-right top-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons md-18">perm_identity</i><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="profile.html"><i class="material-icons md-18">perm_identity</i> Perfil</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="login.html"><i class="material-icons md-18">power_settings_new</i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav nav-pills nav-stacked" id="side-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="material-icons md-18">home</i> Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user.html"><i class="material-icons md-18">group</i>Utilizadores<span class="material-icons md-18"> keyboard_arrow_down</span></a>
+                            <ul class="nav nav-second-level">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="userdata.html"> <i class="material-icons md-18">person</i>Dados Utilizadores</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="userdatabyId.html"> <i class="material-icons md-18">verified_user</i>Dados Utilizador</a>
+                                        </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="userremove.html"> <i class="material-icons md-18">remove_circle</i>Remover Utilizador</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="PR.html"><i class="material-icons md-18">room</i>Pontos de Referência<span class="material-icons md-18"> keyboard_arrow_down</span></a>
+                            <ul class="nav nav-second-level">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="prvisual.html"><i class="material-icons md-18">add_location</i>Visualizar Pontos de Referência</a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Pradd.html"><i class="material-icons md-18">add_location</i>Adicionar Ponto de Referência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Prchange.html"><i class="material-icons md-18">edit_location</i>Alterar Ponto de Referência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Prremove.html"><i class="material-icons md-18">delete</i>Remover Ponto de Referência</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-item" href="espace.html"><i class="material-icons md-18">location_city</i>Espaços<span class="material-icons md-18"> keyboard_arrow_down</span></a>
+                            <ul class="nav nav-second-level">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Espacevisual.html"><i class="material-icons md-18">location_city</i>Visualizar Espaços</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="spacebyId.html"><i class="material-icons md-18">location_city</i>Visualizar Espaço</a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Espaceadd.html"><i class="material-icons md-18">add_location</i>Adicionar Espaços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Espacechange.html"><i class="material-icons md-18">edit_location</i>Alterar Espaços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Espaceremove.html"><i class="material-icons md-18">delete</i>Remover Espaços</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Pi.html"><i class="material-icons md-18">room</i>Pontos de Interesse<span class="material-icons md-18"> keyboard_arrow_down</span></a>
+                            <ul class="nav nav-second-level">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Pivisual.html"> <i class="material-icons md-18">room</i>Visualizar Pontos de Interesse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Piadd.html"><i class="material-icons md-18">add_location</i>Adicionar Pontos de Interesse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Pichange.html"><i class="material-icons md-18">edit_location</i>Alterar Pontos de Interesse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Piremove.html"><i class="material-icons md-18">delete</i>Remover Pontos de Interesse</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="Contri.html"><i class="material-icons md-18">feedback</i>Contribuições<span class="material-icons md-18"> keyboard_arrow_down</span></a>
+                            <ul class="nav nav-second-level">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contrivisual.html"><i class="material-icons md-18">feedback</i>Visualizar Contribuições</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contriremove.html"><i class="material-icons md-18">feedback</i>Remover Contribuições</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="page-header">Adicionar Ponto de Referência</h1>
+              </div>
+              <!-- /.col-lg-12 -->
+          </div>
+          <div class="form-group">
+              <label for="Tipo de leitura">Tipo de leitura</label>
+              <select id="disabledSelect" class="form-control">
+                  <option value = "0">Online</option>
+                  <option value = "1">Offline</option>
+
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" name="name" id="name"  placeholder="Nome"/>
+        </div>
+
+        <div class="form-group">
+            <label> Coordenada X </label>
+            <input type="text" class="form-control" name="coordx" id="coordx"  placeholder="Coordx"/>
+        </div>
+        <div class="form-group">
+            <label> Coordenada y </label>
+            <input type="text" class="form-control" name="coordy" id="coordy"  placeholder="Coordy"/>
+        </div>
+        <div class="form-group">
+          <label> Espaço </label>
+          <input type="text" class="form-control" name="id_space" id="id_space"  placeholder="Espaço"/>
+      </div>
+          <!-- /.row -->
+          <div class="form-group ">
+              <a type="submit" id="add" class="btn btn-primary btn-lg btn-block login-button">Adicionar</a>
+          </div>
+
+          <!-- /.row -->
+            <!-- /.row -->
+      </div>
+      <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- jQuery -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src = "pradd.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

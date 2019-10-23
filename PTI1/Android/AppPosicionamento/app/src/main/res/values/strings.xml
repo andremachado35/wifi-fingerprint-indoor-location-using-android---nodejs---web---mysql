@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Aplicação de Posicionamento</string>
+    <string name="Token">com.example.andre.aplicacaoposicionamento.SharedPreferences</string>
+</resources>
